@@ -4,10 +4,6 @@ using UnityEngine;
 
 public class Projectile_1_Script : MonoBehaviour
 {
-    // Int references 
-    [SerializeField]
-    int Damage;
-
     // Float refernces
     [SerializeField]
     float Speed;
