@@ -115,7 +115,7 @@ public class PlayerController2D : MonoBehaviour
         // Move right functionality
         if (Input.GetKey("d") || Input.GetKey("right"))
         {
-            // current walk speed
+            // current walk animation
            rb2d.velocity = new Vector2(MovementSpeed, rb2d.velocity.y);
             
             // Grounded is true
@@ -131,13 +131,13 @@ public class PlayerController2D : MonoBehaviour
         // Move left functionality
         else if (Input.GetKey("a") || Input.GetKey("left"))
         {
-            // current walk speed
+            // current walk animation
             rb2d.velocity = new Vector2(-MovementSpeed, rb2d.velocity.y);
             
             // Grounded is true
             if (IsGrounded)
 
-            // Set walk speed
+            // Set walk animation
             animator.Play("Walking_Animation");
             spriteRenderer.flipX = true;
 
@@ -172,7 +172,7 @@ public class PlayerController2D : MonoBehaviour
             // Grounded is true
             if (IsGrounded)
 
-            // Set walk speed
+            // Set Animation
             animator.Play("Idling_Animation");
             rb2d.velocity = new Vector2(0, rb2d.velocity.y);
         }
